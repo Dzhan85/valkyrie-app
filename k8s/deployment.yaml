@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: IMAGE_HERE
+        image: gcr.io/qwiklabs-gcp-00-d0df3532e655/valkyrie-app:dev.4
         resources:
           limits:
             memory: "500Mi"
@@ -29,7 +29,7 @@ spec:
         - name: backend
           containerPort: 8080
       - name: frontend
-        image: IMAGE_HERE
+        image: gcr.io/qwiklabs-gcp-00-d0df3532e655/valkyrie-app:dev.4
         resources:
           limits:
             memory: "500Mi"
